@@ -2,10 +2,11 @@
 date-window defaults, cardinality caps, and summaries."""
 from __future__ import annotations
 
+from helpers import FakeReportClient
+
 from flowgauge import reports
 from flowgauge.config import FlowGaugeConfig, ReportDefaults
 from flowgauge.schemas import Row
-from helpers import FakeReportClient
 
 
 def _cfg(**kw) -> FlowGaugeConfig:

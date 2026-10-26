@@ -19,7 +19,7 @@ class FakeReportClient:
 
     def __init__(self, handler=None, rows=None, sampled=False):
         if handler is None:
-            handler = lambda *a, **k: (rows or [], sampled)  # noqa: E731
+            handler = lambda *a, **k: (rows or [], sampled)
         self._handler = handler
         self.calls: list[dict] = []
 
@@ -38,8 +38,8 @@ class FakeReportClient:
 
 def ga4_response(dim_headers, met_headers, rows, sampled=False):
     """Build a minimal duck-typed GA4 runReport response for GA4Client parsing."""
-    H = lambda name: SimpleNamespace(name=name)          # noqa: E731
-    V = lambda value: SimpleNamespace(value=value)        # noqa: E731
+    H = lambda name: SimpleNamespace(name=name)
+    V = lambda value: SimpleNamespace(value=value)
     resp_rows = [
         SimpleNamespace(
             dimension_values=[V(v) for v in r[0]],

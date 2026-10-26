@@ -4,8 +4,9 @@ No network: we inject a fake low-level data client and capture the built request
 """
 from __future__ import annotations
 
-from flowgauge.ga4_client import GA4Client
 from helpers import ga4_response
+
+from flowgauge.ga4_client import GA4Client
 
 
 class _CapturingDataClient:
