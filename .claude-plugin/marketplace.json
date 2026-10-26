@@ -1,8 +1,8 @@
 {
   "name": "flowgauge",
   "owner": {
-    "name": "ianmacdowell13-byte",
-    "url": "https://github.com/ianmacdowell13-byte"
+    "name": "UnicornGraveyard",
+    "url": "https://github.com/UnicornGraveyard"
   },
   "metadata": {
     "description": "FlowGauge — opinionated GA4 analytics as a Claude Code plugin.",

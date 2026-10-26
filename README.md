@@ -91,7 +91,7 @@ that matches your client.
 ### Option A — Claude Code plugin (one command)
 
 ```text
-/plugin marketplace add ianmacdowell13-byte/flowgauge
+/plugin marketplace add UnicornGraveyard/flowgauge
 /plugin install flowgauge@flowgauge
 ```
 
@@ -104,9 +104,9 @@ makes *connecting the tool* one step, not *configuring analytics access*.
 ### Option B — any MCP client (Claude Desktop, Cursor, …)
 
 ```bash
-uvx --from git+https://github.com/ianmacdowell13-byte/flowgauge flowgauge   # run without installing (recommended)
+uvx --from git+https://github.com/UnicornGraveyard/flowgauge flowgauge   # run without installing (recommended)
 # or
-pip install git+https://github.com/ianmacdowell13-byte/flowgauge            # install into your environment
+pip install git+https://github.com/UnicornGraveyard/flowgauge            # install into your environment
 ```
 
 Then add it to your client's MCP config (see [Quickstart](#quickstart) step 5).
@@ -114,7 +114,7 @@ Then add it to your client's MCP config (see [Quickstart](#quickstart) step 5).
 ### From source (development)
 
 ```bash
-git clone https://github.com/ianmacdowell13-byte/flowgauge && cd flowgauge
+git clone https://github.com/UnicornGraveyard/flowgauge && cd flowgauge
 python -m venv .venv && .venv/bin/pip install -e ".[dev]"
 ```
 
@@ -139,7 +139,7 @@ python -m venv .venv && .venv/bin/pip install -e ".[dev]"
    ```
 4. **Run:**
    ```bash
-   uvx --from git+https://github.com/ianmacdowell13-byte/flowgauge flowgauge   # or: pip install -e . && flowgauge
+   uvx --from git+https://github.com/UnicornGraveyard/flowgauge flowgauge   # or: pip install -e . && flowgauge
    ```
 5. **Point your MCP client at it.** Example (Claude Desktop / Cowork `mcpServers` block):
    ```json
@@ -147,7 +147,7 @@ python -m venv .venv && .venv/bin/pip install -e ".[dev]"
      "mcpServers": {
        "flowgauge": {
          "command": "uvx",
-         "args": ["--from", "git+https://github.com/ianmacdowell13-byte/flowgauge", "flowgauge"],
+         "args": ["--from", "git+https://github.com/UnicornGraveyard/flowgauge", "flowgauge"],
          "env": {
            "FLOWGAUGE_CONFIG": "/path/to/flowgauge.config.yaml"
          }

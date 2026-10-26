@@ -4,16 +4,16 @@
   "description": "Opinionated GA4 analytics for people without an analyst — decisions, not tables. Bundles the FlowGauge MCP tools and the traffic-health skill.",
   "author": {
     "name": "FlowGauge contributors",
-    "url": "https://github.com/ianmacdowell13-byte/flowgauge"
+    "url": "https://github.com/UnicornGraveyard/flowgauge"
   },
-  "homepage": "https://github.com/ianmacdowell13-byte/flowgauge",
-  "repository": "https://github.com/ianmacdowell13-byte/flowgauge",
+  "homepage": "https://github.com/UnicornGraveyard/flowgauge",
+  "repository": "https://github.com/UnicornGraveyard/flowgauge",
   "license": "Apache-2.0",
   "keywords": ["mcp", "google-analytics", "ga4", "analytics", "skill", "claude"],
   "mcpServers": {
     "flowgauge": {
       "command": "uvx",
-      "args": ["--from", "git+https://github.com/ianmacdowell13-byte/flowgauge", "flowgauge"],
+      "args": ["--from", "git+https://github.com/UnicornGraveyard/flowgauge", "flowgauge"],
       "env": {
         "FLOWGAUGE_CONFIG": "${FLOWGAUGE_CONFIG}"
       }

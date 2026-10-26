@@ -5,7 +5,7 @@ FlowGauge publishes to [PyPI](https://pypi.org/) automatically via GitHub Action
 anywhere. You push a version tag; the `Release` workflow builds and uploads.
 
 The repo already lives at
-[github.com/ianmacdowell13-byte/flowgauge](https://github.com/ianmacdowell13-byte/flowgauge);
+[github.com/UnicornGraveyard/flowgauge](https://github.com/UnicornGraveyard/flowgauge);
 the steps below are the **one-time PyPI wiring** plus the per-release flow.
 
 ## One-time setup
@@ -15,7 +15,7 @@ the steps below are the **one-time PyPI wiring** plus the per-release flow.
 - Create a PyPI account at https://pypi.org and enable 2FA.
 - Go to **Your account → Publishing → Add a new pending publisher** and enter:
   - **PyPI Project Name:** `flowgauge`
-  - **Owner:** `ianmacdowell13-byte`
+  - **Owner:** `UnicornGraveyard`
   - **Repository name:** `flowgauge`
   - **Workflow name:** `release.yml`
   - **Environment name:** `pypi`
