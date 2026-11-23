@@ -1,6 +1,6 @@
-## Jira issue
+## Maintainer Jira reference (optional for outside contributors)
 
-<!-- Include the issue key in the title. Link the issue and identify the acceptance criteria addressed. -->
+<!-- Maintainers: include the Jira key in the title, link the issue and identify the acceptance criteria. Outside contributors can omit this section. Describe risk and deployment impact when relevant. -->
 
 ## Implementation
 

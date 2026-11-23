@@ -5,12 +5,14 @@
 Google Analytics 4 reporting through a local MCP server and skill. Python.
 
 - **Layout.** src/ contains implementation, skills/ the client instructions, config/ configuration, tests/ the offline suite.
-- **Local setup and validation.** `python -m venv .venv` then `.venv/bin/pip install -e ".[dev,bigquery]"`. Run `.venv/bin/ruff check .` and `.venv/bin/pytest -q`. Confirm any additional checks for the affected path in existing instructions and CI.
+- **Local setup and validation.** `python -m venv .venv` then `.venv/bin/pip install -e ".[dev]"`. The bigquery extra is optional. Run `.venv/bin/ruff check .` and `.venv/bin/pytest -q`. Confirm any additional checks for the affected path in existing instructions and CI.
 - **Delivery.** GitHub release workflow. Hosted runtime unconfirmed.
 - **Jira.** Repository mapping unconfirmed. Use the actual issue assigned for the work.
 - **Notion.** The FlowGauge page is available in the private workspace. Use the link on the Jira issue.
 
 ## Portfolio engineering workflow
+
+The Jira and private Notion steps below apply to portfolio maintainers and their agents. External contributors and dependency bots can use public GitHub issues and the repository’s normal branch, commit and PR conventions. Maintainers handle any internal tracking.
 
 1. **Pick up the issue.** For substantive changes, read the Jira issue, its acceptance criteria, dependencies and linked Notion context. Read this file, applicable directory instructions, contribution notes and the affected implementation before editing. Confirm the intended outcome with the owner if requirements are missing. Keep product strategy, research and durable decisions in Notion, execution status in Jira and implementation history in GitHub.
 2. **Claim a single line of work.** Check Jira status, open PRs, remote branches, `git status --short --branch` and `git worktree list`. Resume the existing issue branch when one exists. Coordinate a single writer per branch. For independent tasks, use separate branches and worktrees. Preserve other contributors’ uncommitted changes.
